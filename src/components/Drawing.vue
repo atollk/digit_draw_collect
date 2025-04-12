@@ -45,7 +45,7 @@ onMounted(() => {
             ctx.lineWidth = STROKE_WIDTH
             ctx.lineCap = "round"
 
-            // Draw guide lines
+            // Draw guidelines
             drawGuideLines()
         }
     }
@@ -145,7 +145,7 @@ const handleEnd = () => {
 }
 
 const getCoordinates = (e: MouseEvent | TouchEvent, rect: DOMRect) => {
-    let clientX, clientY
+    let clientX: number, clientY: number
 
     if ("touches" in e) {
         clientX = e.touches[0].clientX
@@ -195,11 +195,6 @@ const downloadResults = () => {
     link.click()
     document.body.removeChild(link)
     URL.revokeObjectURL(url)
-}
-
-// Prevent default scrolling behavior when touching the canvas
-const preventDefault = (e: Event) => {
-    e.preventDefault()
 }
 </script>
 
