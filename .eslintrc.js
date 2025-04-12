@@ -68,17 +68,6 @@ module.exports = {
   },
 
   rules: {
-    "prettier-vue/prettier": [
-      "error",
-      {
-        useTabs: false,
-        tabWidth: 4,
-        singleQuote: false,
-        semi: false,
-        trailingComma: "all",
-        printWidth: 100,
-        plugins: ["prettier-plugin-vue", "prettier-plugin-tailwindcss"],
-      },
-    ],
+    "prettier-vue/prettier": ["error"],
   },
 };
