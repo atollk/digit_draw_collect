@@ -79,7 +79,7 @@ const drawGuideLines = () => {
 
     // Reset dash and return to drawing settings
     ctx.setLineDash([])
-    ctx.strokeStyle = "black"
+    ctx.strokeStyle = window.getComputedStyle(document.documentElement).getPropertyValue("--color-primary")
     ctx.lineWidth = STROKE_WIDTH
 }
 
