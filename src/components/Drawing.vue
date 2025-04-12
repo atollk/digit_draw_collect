@@ -244,7 +244,7 @@ const downloadResults = () => {
                     <label class="text-success">Positive</label>
                 </div>
 
-                <button class="btn btn-secondary" @click="downloadResults" :disabled="allDrawings.length === 0">
+                <button class="btn btn-primary" @click="downloadResults" :disabled="allDrawings.length === 0">
                     Download Results ({{ allDrawings.length }} drawings)
                 </button>
             </div>
