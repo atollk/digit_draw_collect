@@ -238,7 +238,7 @@ const downloadResults = () => {
                     <label class="text-error">Negative</label>
                     <input
                         type="checkbox"
-                        :checked="isPositive"
+                        v-model="isPositive"
                         class="toggle border-error checked:bg-success bg-error checked:border-success"
                     />
                     <label class="text-success">Positive</label>
